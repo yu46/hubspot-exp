@@ -15,6 +15,7 @@ declare(strict_types=1);
  */
 namespace App\View;
 
+use BootstrapUI\View\UIView;
 use Cake\View\View;
 
 /**
@@ -24,7 +25,7 @@ use Cake\View\View;
  *
  * @link https://book.cakephp.org/4/en/views.html#the-app-view
  */
-class AppView extends View
+class AppView extends UIView
 {
     /**
      * Initialization hook method.
@@ -37,5 +38,6 @@ class AppView extends View
      */
     public function initialize(): void
     {
+        parent::initialize();
     }
 }
